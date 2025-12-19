@@ -1,0 +1,30 @@
+<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:constants="clr-namespace:Simple.App.Constants">
+
+  <Style TargetType="Label">
+    <Setter Property="FontSize" Value="16" />
+    <Setter Property="FontFamily" Value="{x:Static constants:FontFamily.MainFontRegular}" />
+    <Setter
+      Property="TextColor"
+      Value="{AppThemeBinding 
+        Light={StaticResource TextPrimaryColorLight},
+        Dark={StaticResource TextPrimaryColorDark}}" />
+  </Style>
+
+  <Style TargetType="Label" x:Key="PrincipalTitleLabel">
+    <Setter Property="FontSize" Value="30" />
+    <Setter Property="FontFamily" Value="{x:Static constants:FontFamily.MainFontBold}" />
+  </Style>
+
+  <Style TargetType="Label" x:Key="SubtitleSecondaryLabel">
+    <Setter Property="FontFamily" Value="{x:Static constants:FontFamily.MainFontExtraLight}" />
+    <Setter
+      Property="TextColor"
+      Value="{AppThemeBinding 
+        Light={StaticResource TextSecondaryColorLight},
+        Dark={StaticResource TextSecondaryColorDark}}" />
+  </Style>
+
+</ResourceDictionary>

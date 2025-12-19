@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<views:BaseViewPage
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:views="clr-namespace:Simple.App.Views"
+  xmlns:viewModels="clr-namespace:Simple.App.ViewModels.Auth"
+  xmlns:resources="clr-namespace:Simple.App.Resources"
+  xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  ControlTemplate="{StaticResource BasePageTemplate}"
+  x:Class="Simple.App.Views.Auth.Login.LoginPage"
+  x:DataType="viewModels:LoginViewModel">
+  <VerticalStackLayout Padding="0,30">
+
+    <Border
+      StrokeShape="RoundRectangle 15"
+      HeightRequest="70"
+      WidthRequest="70"
+      Padding="10"
+      BackgroundColor="{AppThemeBinding 
+        Light={StaticResource PrimaryColorLight},
+        Dark={StaticResource PrimaryColorDark}}">
+      <Image Source="cloud_icon.png">
+        <Image.Behaviors>
+          <toolkit:IconTintColorBehavior
+            TintColor="{AppThemeBinding 
+              Light={StaticResource BackgroundColorLight},
+              Dark={StaticResource BackgroundColorDark}}" />
+        </Image.Behaviors>
+      </Image>
+    </Border>
+
+    <Label
+      HorizontalOptions="Center"
+      Margin="0, 20, 0, 10"
+      Text="{x:Static resources:ResourceTexts.SystemName}"
+      Style="{StaticResource PrincipalTitleLabel}" />
+
+    <Label
+      HorizontalOptions="Center"
+      Text="{x:Static resources:ResourceTexts.SalesManagementSubtitle}"
+      Style="{StaticResource SubtitleSecondaryLabel}" />
+
+  </VerticalStackLayout>
+</views:BaseViewPage>

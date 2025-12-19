@@ -1,0 +1,42 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="Directory.Packages.props"/>
+    <File Path="Directory.Build.props"/>
+    <File Path="Directory.Build.targets"/>
+  </Folder>
+
+  <Folder Name="/src/"/>
+
+  <Folder Name="/src/Backend/"/>
+  <Folder Name="/src/Backend/BuildingBlocks/">
+    <Project Path="src/Backend/BuildingBlocks/BuildingBlocks.Api/BuildingBlocks.Api.csproj"/>
+    <Project Path="src/Backend/BuildingBlocks/BuildingBlocks.Domain/BuildingBlocks.Domain.csproj"/>
+    <Project Path="src/Backend/BuildingBlocks/BuildingBlocks.Infrastructure/BuildingBlocks.Infrastructure.csproj"/>
+  </Folder>
+
+  <Folder Name="/src/Backend/Host/">
+    <Project Path="src/Backend/Host/Simple.Api/Simple.Api.csproj"/>
+    <Project Path="src/Backend/Host/Simple.AppHost/Simple.AppHost.csproj"/>
+    <Project Path="src/Backend/Host/Simple.ServiceDefaults/Simple.ServiceDefaults.csproj"/>
+  </Folder>
+
+  <Folder Name="/src/Backend/Modules/"/>
+  <Folder Name="/src/Backend/Modules/Identity/">
+    <Project Path="src/Backend/Modules/Identity/Identity.Api/Identity.Api.csproj"/>
+    <Project Path="src/Backend/Modules/Identity/Identity.Application/Identity.Application.csproj"/>
+    <Project Path="src/Backend/Modules/Identity/Identity.Domain/Identity.Domain.csproj"/>
+    <Project Path="src/Backend/Modules/Identity/Identity.Infrastructure/Identity.Infrastructure.csproj"/>
+  </Folder>
+
+  <Folder Name="/src/Mobile/">
+    <Project Path="src/Mobile/Simple.App/Simple.App.csproj"/>
+  </Folder>
+
+
+  <Folder Name="/tests/"/>
+  <Folder Name="/tests/Backend/"/>
+  <Folder Name="/tests/Backend/Modules/"/>
+  <Folder Name="/tests/Backend/Modules/Identity/">
+    <Project Path="tests/Backend/Modules/Identity/Identity.Domain.Tests/Identity.Domain.Tests.csproj"/>
+  </Folder>
+</Solution>

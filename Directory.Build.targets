@@ -1,0 +1,44 @@
+<Project>
+  <PropertyGroup>
+    <BBDomainPath>
+      $(MSBuildThisFileDirectory)src\Backend\BuildingBlocks\BuildingBlocks.Domain\BuildingBlocks.Domain.csproj
+    </BBDomainPath>
+    <BBInfrastructurePath>
+      $(MSBuildThisFileDirectory)src\Backend\BuildingBlocks\BuildingBlocks.Infrastructure\BuildingBlocks.Infrastructure.csproj
+    </BBInfrastructurePath>
+    <BBApiPath>
+      $(MSBuildThisFileDirectory)src\Backend\BuildingBlocks\BuildingBlocks.Api\BuildingBlocks.Api.csproj
+    </BBApiPath>
+  </PropertyGroup>
+
+  <ItemGroup Condition="
+    $([System.String]::Copy('$(MSBuildProjectFullPath)').Contains('Modules')) 
+    AND $([System.String]::Copy('$(MSBuildProjectName)').EndsWith('Domain'))">
+    <ProjectReference Include="$(BBDomainPath)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="
+    $([System.String]::Copy('$(MSBuildProjectFullPath)').Contains('Modules'))
+    AND $([System.String]::Copy('$(MSBuildProjectName)').EndsWith('Infrastructure'))">
+    <ProjectReference Include="$(BBInfrastructurePath)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="
+    $([System.String]::Copy('$(MSBuildProjectFullPath)').Contains('Modules'))
+    AND $([System.String]::Copy('$(MSBuildProjectName)').EndsWith('Api'))">
+    <ProjectReference Include="$(BBApiPath)" />
+  </ItemGroup>
+
+  <ItemGroup Condition="
+    $([System.String]::Copy('$(MSBuildProjectFullPath)').Contains('Host'))
+    AND $([System.String]::Copy('$(MSBuildProjectName)').EndsWith('Api'))">
+    <ModuleApiProjects Include="$(MSBuildThisFileDirectory)src/Backend/Modules/**/*.Api.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="
+    $([System.String]::Copy('$(MSBuildProjectFullPath)').Contains('Host'))
+    AND $([System.String]::Copy('$(MSBuildProjectName)').EndsWith('Api'))">
+    <ProjectReference Include="@(ModuleApiProjects)" />
+  </ItemGroup>
+
+</Project>

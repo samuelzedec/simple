@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView
+  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+  x:Class="Simple.App.Components.DefaultHeader.DefaultHeader"
+  xmlns:constants="clr-namespace:Simple.App.Constants"
+  x:Name="this">
+
+  <Grid
+    BindingContext="{x:Reference this}"
+    Padding="16, 5"
+    BackgroundColor="{AppThemeBinding 
+      Light={StaticResource BackgroundColorLight},
+      Dark={StaticResource BackgroundColorDark}}">
+
+    <ImageButton
+      Source="back_icon.png"
+      Padding="10"
+      WidthRequest="40"
+      HeightRequest="40"
+      VerticalOptions="Center"
+      HorizontalOptions="Start"
+      BackgroundColor="Transparent"
+      Command="{Binding GoToBackCommand}">
+      <ImageButton.Behaviors>
+        <toolkit:IconTintColorBehavior
+          TintColor="{AppThemeBinding 
+            Light={StaticResource TextPrimaryColorLight},
+            Dark={StaticResource TextPrimaryColorDark}}" />
+      </ImageButton.Behaviors>
+    </ImageButton>
+
+    <Label
+      Text="{Binding Title}"
+      FontFamily="{x:Static constants:FontFamily.MainFontSemiBold}"
+      TextTransform="Uppercase"
+      HorizontalOptions="Center"
+      VerticalOptions="Center" />
+
+  </Grid>
+</ContentView>

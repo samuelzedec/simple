@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FullNameEmpty" xml:space="preserve">
+        <value>Full name cannot be empty</value>
+    </data>
+  <data name="FullNameInvalid" xml:space="preserve">
+        <value>Full name contains invalid characters</value>
+    </data>
+  <data name="FullNameInvalidLength" xml:space="preserve">
+        <value>Full name must be between {0} and {1} characters long</value>
+    </data>
+  <data name="UserIdIsRequired" xml:space="preserve">
+        <value>User identifier is required</value>
+    </data>
+  <data name="WorkspaceIdIsRequired" xml:space="preserve">
+        <value>Workspace identifier is required</value>
+    </data>
+  <data name="UserAlreadyHasRole" xml:space="preserve">
+        <value>The user is already linked to this role</value>
+    </data>
+  <data name="UserAlreadyInactiveInWorkspace" xml:space="preserve">
+        <value>The user is already inactive in this workspace</value>
+    </data>
+  <data name="UserAlreadyActiveInWorkspace" xml:space="preserve">
+        <value>The user is already active in this workspace</value>
+    </data>
+  <data name="WorkspaceMaxUsersMustBeGreaterThanZero" xml:space="preserve">
+        <value>Max users must be greater than zero</value>
+    </data>
+  <data name="WorkspaceAlreadyInactive" xml:space="preserve">
+        <value>The workspace is now inactive</value>
+    </data>
+  <data name="AuthenticationIdentifierIsRequired" xml:space="preserve">
+        <value>The authentication manager ID is required.</value>
+    </data>
+    <data name="InvitationExpirationDaysExceeded" xml:space="preserve">
+        <value>Invitation expiration days ({0}) cannot exceed the maximum allowed ({1})</value>
+    </data>
+</root>

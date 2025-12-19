@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FullNameEmpty" xml:space="preserve">
+        <value>Nome completo não pode estar vazio</value>
+    </data>
+  <data name="FullNameInvalid" xml:space="preserve">
+        <value>Nome completo contém caracteres inválidos</value>
+    </data>
+  <data name="FullNameInvalidLength" xml:space="preserve">
+        <value>Nome completo deve ter entre {0} e {1} caracteres</value>
+    </data>
+  <data name="UserIdIsRequired" xml:space="preserve">
+        <value>Identificador do usuário é necessário</value>
+    </data>
+  <data name="WorkspaceIdIsRequired" xml:space="preserve">
+        <value>Identificador do espaço de trabalho é necessário</value>
+    </data>
+  <data name="UserAlreadyHasRole" xml:space="preserve">
+        <value>O usuário já está vinculado a esta função</value>
+    </data>
+  <data name="UserAlreadyInactiveInWorkspace" xml:space="preserve">
+        <value>O usuário já está inativo neste espaço de trabalho</value>
+    </data>
+  <data name="UserAlreadyActiveInWorkspace" xml:space="preserve">
+        <value>O usuário já está ativo neste espaço de trabalho</value>
+    </data>
+  <data name="WorkspaceMaxUsersMustBeGreaterThanZero" xml:space="preserve">
+        <value>O número máximo de usuários deve ser maior que zero</value>
+    </data>
+  <data name="WorkspaceAlreadyInactive" xml:space="preserve">
+        <value>O espaço de trabalho já está inativo</value>
+    </data>
+  <data name="AuthenticationIdentifierIsRequired" xml:space="preserve">
+        <value>É necessário informar o ID do gerenciador de autenticação</value>
+    </data>
+    <data name="InvitationExpirationDaysExceeded" xml:space="preserve">
+        <value>Os dias de expiração do convite ({0}) não podem exceder o máximo permitido ({1})</value>
+    </data>
+</root>

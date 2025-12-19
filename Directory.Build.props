@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup Condition="!$(MSBuildProjectFullPath.Contains('Mobile'))">
+    <TargetFramework>net10.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+</Project>
